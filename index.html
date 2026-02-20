@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), fullscreen=(), payment=()" />
+    <meta name="csp-nonce" content="%CSP_NONCE%" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Base44 APP</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script nonce="%CSP_NONCE%">
+      (function () {
+        const nonce = document.querySelector('meta[name="csp-nonce"]')?.content || '';
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = '/src/main.jsx';
+        if (nonce) script.setAttribute('nonce', nonce);
+        document.currentScript.after(script);
+      })();
+    </script>
+  </body>
+</html>

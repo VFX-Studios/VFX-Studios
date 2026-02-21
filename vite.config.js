@@ -15,5 +15,9 @@ export default defineConfig({
       visualEditAgent: true
     }),
     react(),
-  ]
+  ],
+  server: {
+    // Allow Netlify dev server host header
+    allowedHosts: ['devserver-master--vfx-studios.netlify.app'] C:\Users\chadh\Videos\Ubiquitously Nowhere\setlist-storyboard-creator
+  }
 });

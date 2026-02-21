@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "smoke:ai": "next ./scripts/ai-providers-smoke.mjs",
-    "lint": "next eslint . --quiet",
-    "lint:fix": "next eslint . --fix",
+    "smoke:ai": "node ./scripts/ai-providers-smoke.mjs",
+    "lint": "eslint . --quiet",
+    "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "preview": "next preview"
+    "preview": "preview"
      
     
   },

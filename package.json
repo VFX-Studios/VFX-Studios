@@ -4,13 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "smoke:ai": "node ./scripts/ai-providers-smoke.mjs",
-    "lint": "eslint . --quiet",
-    "lint:fix": "eslint . --fix",
+    "dev": "next dev",
+    "build": "next build",
+    "smoke:ai": "next ./scripts/ai-providers-smoke.mjs",
+    "lint": "next eslint . --quiet",
+    "lint:fix": "next eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "preview": "vite preview"
+    "preview": "next preview"
+     
+    
   },
   "dependencies": {
     "@base44/sdk": "^0.8.18",

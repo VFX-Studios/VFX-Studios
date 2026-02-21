@@ -1,5 +1,5 @@
 import base44 from "@base44/next-plugin"
-import react from '@nextyjs/plugin-react'
+import react from '@next.js/plugin-react'
 import { defineConfig } from 'next'
 export default defineConfig({
   logLevel: 'error', // Suppress warnings, only show errors
